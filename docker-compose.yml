@@ -14,7 +14,7 @@ services:
     depends_on:
       - postgres-container
     environment:
-      POSTGRES_HOST: postgres_host
+      POSTGRES_HOST: postgres-container
       POSTGRES_PORT: 5432
     restart: unless-stopped
     networks:
